@@ -16,12 +16,22 @@ public class Calculadora{
     public void calcular(){
         HashMap<String, Integer> covid = criarHashMapCovid();
         HashMap<String, Integer> contagem = criarHashMapContagem();
-
+        
         somar(covid, contagem);
     }
 
-    private void somar() {
-        for()
+    private void somar(HashMap<String, Integer> covid, HashMap<String, Integer> contagem) {
+        for(String chave:covid.keySet()){
+            String nome = chave;
+            int qtdPessoas = contagem.get(chave);
+            int qtdInfectados = covid.get(chave);
+            System.out.println("nome do estado: " + nome + " ;quantidade pessoais: " + qtdPessoas + " ;quantidade infectados: " + qtdInfectados + " ;porcentagem de contaminados: " + (((qtdInfectados*100))/qtdPessoas)+"%");
+        }
+
+    }
+
+    private void somarPorEstado(HashMap<String, Integer> covid, HashMap<String, Integer> contagem){
+
     }
 
     private HashMap<String, Integer> criarHashMapCovid() {
