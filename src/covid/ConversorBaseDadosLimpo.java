@@ -28,7 +28,7 @@ public class ConversorBaseDadosLimpo {
         }
     }
 
-    private HashMap<String, Integer> criarHashMap() {
+    public HashMap<String, Integer> criarHashMap() {
         HashMap<String, Integer> capitalCities = new HashMap<String, Integer>();
 
         capitalCities.put("AC", 0);
