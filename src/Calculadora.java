@@ -1,40 +1,50 @@
-import java.util.HashMap;
 import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.HashMap;
 
-import covid.ConversorBaseDadosLimpo;
+import Objeto.ObejtoConversorContagem;
+import Objeto.ObjetoConversorCovid;
 
 public class Calculadora{
+    private File directory = new File("");
 
-    public void calcular(){
-        String directoryContagem = "/src/baseDeDados/Contagem Populacional Brasil/Contagem Populacional limpa.csv";
-        String directoryCovid = "/src/baseDeDados/covid/baseCovidLimpo.csv";
-        
-        HashMap<String, Integer> covid = new ConversorBaseDadosLimpo().criarHashMap();
-        HashMap<String, Integer> contagem = new ConversorBaseDadosLimpo().criarHashMap();
+    public Calculadora() {
 
-        covid = somarPorEstado(directoryCovid, contagem);
     }
 
-    private HashMap<String, Integer> somarPorEstado(String caminho, HashMap<String, Integer> capitalCities) {
-        Reader directory = null;
+    public void calcular(){
+        HashMap<String, Integer> covid = criarHashMapCovid();
+        HashMap<String, Integer> contagem = criarHashMapContagem();
+
+        somar(covid, contagem);
+    }
+
+    private void somar() {
+        for()
+    }
+
+    private HashMap<String, Integer> criarHashMapCovid() {
+        HashMap<String, Integer> hash = new HashMap<>();
+
         try {
-            directory = new FileReader(caminho);
-            Files.lines(directory.)
-                .skip(1)
+            Files.lines(Paths.get(directory.getAbsolutePath() + "/src/baseDeDados/covid/baseCovidLimpo.csv"))
                 .map(line -> line.split(";"))
-                .map(col-> new ObjetoConversorCovid(Integer.parseInt(col[3]), col[2]))
-                .forEach(System.out::println);
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        return capitalCities;
+                .map(col-> new ObjetoConversorCovid(null, col[0], Integer.parseInt(col[1]), null))
+                .forEach(obj -> {hash.put(obj.getEstado(), obj.getCasosAcumulado());});
+        } catch (Exception e) {}
+        return hash;
+    }
+
+    private HashMap<String, Integer> criarHashMapContagem() {
+        HashMap<String, Integer> hash = new HashMap<>();
+
+        try {
+            Files.lines(Paths.get(directory.getAbsolutePath() + "/src/baseDeDados/Contagem Populacional Brasil/Contagem Populacional limpa.csv"))
+                .map(line -> line.split(";"))
+                .map(col-> new ObejtoConversorContagem(col[0], Integer.parseInt(col[1])))
+                .forEach(obj -> {hash.put(obj.getEstado(), obj.getQuantidade());});
+        } catch (Exception e) {}
+        return hash;
     }
 }

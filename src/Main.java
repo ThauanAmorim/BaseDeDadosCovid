@@ -12,5 +12,8 @@ public class Main {
 
         // ConversorBaseDadosContagemSujo contagem = new ConversorBaseDadosContagemSujo();
         // contagem.ler();
+
+        Calculadora cal = new Calculadora();
+        cal.calcular();
     }
 }
