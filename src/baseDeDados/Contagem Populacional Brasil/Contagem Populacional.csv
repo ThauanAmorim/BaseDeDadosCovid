@@ -1,0 +1,35 @@
+﻿NC;NN;MC;MN;V;D1C;D1N;D2C;D2N;D3C;D3N
+Nível Territorial (Código);Nível Territorial;Unidade de Medida (Código);Unidade de Medida;Valor;Brasil; Grande Região e UF (Código);Brasil; Grande Região e UF;Variável (Código);Variável;Ano (Código);Ano
+1;Brasil;45;Pessoas;183987291;1;Brasil;93;População residente;2007;2007
+2;Grande Região;45;Pessoas;14623316;1;Norte;93;População residente;2007;2007
+3;Unidade da Federação;45;Pessoas;1453756;11;RO;93;População residente;2007;2007
+3;Unidade da Federação;45;Pessoas;655385;12;AC;93;População residente;2007;2007
+3;Unidade da Federação;45;Pessoas;3221939;13;AM;93;População residente;2007;2007
+3;Unidade da Federação;45;Pessoas;395725;14;RR;93;População residente;2007;2007
+3;Unidade da Federação;45;Pessoas;7065573;15;PA;93;População residente;2007;2007
+3;Unidade da Federação;45;Pessoas;587311;16;AP;93;População residente;2007;2007
+3;Unidade da Federação;45;Pessoas;1243627;17;TO;93;População residente;2007;2007
+2;Grande Região;45;Pessoas;51534406;2;Nordeste;93;População residente;2007;2007
+3;Unidade da Federação;45;Pessoas;6118995;21;MA;93;População residente;2007;2007
+3;Unidade da Federação;45;Pessoas;3032421;22;PI;93;População residente;2007;2007
+3;Unidade da Federação;45;Pessoas;8185286;23;CE;93;População residente;2007;2007
+3;Unidade da Federação;45;Pessoas;3013740;24;RN;93;População residente;2007;2007
+3;Unidade da Federação;45;Pessoas;3641395;25;PB;93;População residente;2007;2007
+3;Unidade da Federação;45;Pessoas;8485386;26;PE;93;População residente;2007;2007
+3;Unidade da Federação;45;Pessoas;3037103;27;AL;93;População residente;2007;2007
+3;Unidade da Federação;45;Pessoas;1939426;28;SE;93;População residente;2007;2007
+3;Unidade da Federação;45;Pessoas;14080654;29;BA;93;População residente;2007;2007
+2;Grande Região;45;Pessoas;77873120;3;Sudeste;93;População residente;2007;2007
+3;Unidade da Federação;45;Pessoas;19273506;31;MG;93;População residente;2007;2007
+3;Unidade da Federação;45;Pessoas;3351669;32;ES;93;População residente;2007;2007
+3;Unidade da Federação;45;Pessoas;15420375;33;RJ;93;População residente;2007;2007
+3;Unidade da Federação;45;Pessoas;39827570;35;SP;93;População residente;2007;2007
+2;Grande Região;45;Pessoas;26733595;4;Sul;93;População residente;2007;2007
+3;Unidade da Federação;45;Pessoas;10284503;41;PR;93;População residente;2007;2007
+3;Unidade da Federação;45;Pessoas;5866252;42;SC;93;População residente;2007;2007
+3;Unidade da Federação;45;Pessoas;10582840;43;RS;93;População residente;2007;2007
+2;Grande Região;45;Pessoas;13222854;5;Centro-Oeste;93;População residente;2007;2007
+3;Unidade da Federação;45;Pessoas;2265274;50;MS;93;População residente;2007;2007
+3;Unidade da Federação;45;Pessoas;2854642;51;MT;93;População residente;2007;2007
+3;Unidade da Federação;45;Pessoas;5647035;52;GO;93;População residente;2007;2007
+3;Unidade da Federação;45;Pessoas;2455903;53;DF;93;População residente;2007;2007
